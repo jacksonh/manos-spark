@@ -16,9 +16,30 @@ Manos.Spark adds a render method to the ManosModule class, so you should be able
 Example
 -------
 
+in SomeAction.cs:
+
     public void Index (IManosContext ctx)
     {
         this.RenderSparkView (ctx, "index.spark", new {
              Title = "Manos de Mono",
         });
     }
+
+in base.spark:
+
+    <html>
+      <title>${#Title}</title>
+      <body>
+        <use content="body" />
+      </body>
+    </html>
+
+in index.spark:
+
+   <use master="base.spark" />
+
+   <content name="body">
+     <h1>${#Title}</h1>
+     Why, Hello thar.
+   </content>
+
