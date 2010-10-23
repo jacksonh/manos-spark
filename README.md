@@ -1,7 +1,7 @@
 Manos.Spark
 ===========
 
-Manos.Spark lets you use the Spark view engine http://sparkviewengine.com/ in your Manos web applications.
+Manos.Spark lets you use the Spark view engine [http://sparkviewengine.com/](http://sparkviewengine.com/) in your Manos web applications.
 
 Installation
 ------------
