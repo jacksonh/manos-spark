@@ -36,10 +36,10 @@ in base.spark:
 
 in index.spark:
 
-   <use master="base.spark" />
+    <use master="base.spark" />
 
-   <content name="body">
-     <h1>${#Title}</h1>
-     Why, Hello thar.
-   </content>
+    <content name="body">
+      <h1>${#Title}</h1>
+      Why, Hello thar.
+    </content>
 
